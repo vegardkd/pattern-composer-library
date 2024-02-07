@@ -16,7 +16,7 @@ def send_request(file_path):
     encoded_code = urllib.parse.quote(code)
 
     # Prepare the request URL
-    request_url = f"https://composer-api.vercel.app/test-run?code={encoded_code}"
+    request_url = f"https://composer-api.vercel.app/run?code={encoded_code}"
 
     # Send the request
     try:
