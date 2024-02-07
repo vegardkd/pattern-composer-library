@@ -26,7 +26,7 @@ def send_request(file_path):
                 date = datetime.now().strftime('%m-%d-%Y-%H.%M.%S')
                 name = absolute_file_path.split(os.sep)[-1].replace('.py', '')
                 output_file_name = f'{name}-{date}.mid'
-                with open(f'./output/{output_file_name}', 'wb') as output_file:
+                with open(f'./{output_file_name}', 'wb') as output_file:
                     output_file.write(response.read())
                 print(f'{output_file_name} written to /ouput')
             else:
